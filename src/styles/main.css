@@ -5,13 +5,16 @@
 
 /* CSS Custom Properties */
 :root {
-  /* Refined Color Palette */
+  /* Dark Theme Color Palette */
+  --color-dark-bg: #1A1614;
+  --color-dark-surface: #252220;
+  --color-dark-elevated: #2F2C2A;
   --color-cream: #F5F1E8;
   --color-sand: #E8DCC4;
   --color-charcoal: #2A2825;
-  --color-slate: #52504C;
-  --color-terracotta: #C86B3C;
-  --color-bronze: #B8956A;
+  --color-slate: #8A8378;
+  --color-terracotta: #D97848;
+  --color-bronze: #C9A86A;
   --color-forest: #3A4F3F;
   --color-white: #FFFFFF;
 
@@ -64,8 +67,8 @@ body {
   font-family: var(--font-body);
   font-size: var(--text-base);
   line-height: 1.7;
-  color: var(--color-charcoal);
-  background-color: var(--color-cream);
+  color: var(--color-cream);
+  background-color: var(--color-dark-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -75,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   font-weight: 500;
   line-height: 1.1;
-  color: var(--color-charcoal);
+  color: var(--color-cream);
   margin-bottom: var(--space-sm);
 }
 
@@ -138,11 +141,12 @@ a:hover {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(245, 241, 232, 0.95);
+  background: rgba(26, 22, 20, 0.98);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(42, 40, 37, 0.08);
+  border-bottom: 1px solid rgba(245, 241, 232, 0.1);
   z-index: 1000;
   transition: var(--transition);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 .nav-content {
@@ -168,7 +172,7 @@ a:hover {
   font-family: var(--font-display);
   font-size: var(--text-lg);
   font-weight: 500;
-  color: var(--color-charcoal);
+  color: var(--color-cream);
   letter-spacing: -0.02em;
 }
 
@@ -176,11 +180,12 @@ a:hover {
   text-align: center;
   font-size: var(--text-sm);
   color: var(--color-slate);
-  padding: var(--space-sm) 0;
-  border-top: 1px solid rgba(42, 40, 37, 0.08);
+  padding: var(--space-md) 0;
+  border-top: 1px solid rgba(245, 241, 232, 0.1);
   margin-top: var(--space-sm);
   font-weight: 400;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .nav-links {
@@ -193,7 +198,7 @@ a:hover {
 .nav-links a {
   font-size: var(--text-sm);
   font-weight: 500;
-  color: var(--color-slate);
+  color: var(--color-sand);
   padding: var(--space-xs) 0;
   position: relative;
 }
@@ -210,7 +215,7 @@ a:hover {
 }
 
 .nav-links a:hover {
-  color: var(--color-charcoal);
+  color: var(--color-cream);
   opacity: 1;
 }
 
@@ -341,7 +346,8 @@ a:hover {
 
 /* About Section */
 .about {
-  background-color: var(--color-white);
+  background-color: var(--color-dark-surface);
+  position: relative;
 }
 
 .about-grid {
@@ -404,7 +410,7 @@ a:hover {
 
 /* Features Section */
 .features {
-  background-color: var(--color-cream);
+  background-color: var(--color-dark-bg);
 }
 
 .features-grid {
@@ -416,15 +422,16 @@ a:hover {
 
 .feature-card {
   padding: var(--space-xl) var(--space-lg);
-  background-color: var(--color-white);
+  background-color: var(--color-dark-surface);
   transition: var(--transition);
-  border: 1px solid transparent;
+  border: 1px solid rgba(245, 241, 232, 0.1);
 }
 
 .feature-card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--color-sand);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  border-color: var(--color-terracotta);
+  background-color: var(--color-dark-elevated);
 }
 
 .feature-icon {
@@ -436,7 +443,7 @@ a:hover {
 .feature-card h3 {
   font-size: var(--text-lg);
   margin-bottom: var(--space-sm);
-  color: var(--color-charcoal);
+  color: var(--color-cream);
 }
 
 .feature-card p {
@@ -493,7 +500,7 @@ a:hover {
 
 /* Events Section */
 .events {
-  background-color: var(--color-white);
+  background-color: var(--color-dark-surface);
   text-align: center;
 }
 
@@ -505,11 +512,12 @@ a:hover {
 }
 
 .luma-embed-container {
-  background-color: var(--color-cream);
+  background-color: var(--color-dark-elevated);
   padding: var(--space-2xl);
-  border: 1px solid var(--color-sand);
+  border: 1px solid rgba(245, 241, 232, 0.1);
   min-height: 500px;
   margin-top: var(--space-xl);
+  border-radius: 0;
 }
 
 .luma-embed-container iframe {
@@ -520,7 +528,7 @@ a:hover {
 
 /* Join Section */
 .join {
-  background-color: var(--color-charcoal);
+  background-color: var(--color-dark-bg);
   color: var(--color-cream);
   text-align: center;
 }
@@ -577,7 +585,7 @@ a:hover {
 
 /* Contact Section */
 .contact {
-  background-color: var(--color-cream);
+  background-color: var(--color-dark-surface);
   text-align: center;
 }
 
@@ -597,13 +605,13 @@ a:hover {
 
 .contact-item {
   padding: var(--space-xl);
-  background-color: var(--color-white);
-  border: 1px solid var(--color-sand);
+  background-color: var(--color-dark-elevated);
+  border: 1px solid rgba(245, 241, 232, 0.1);
 }
 
 .contact-item h3 {
   font-size: var(--text-lg);
-  color: var(--color-charcoal);
+  color: var(--color-cream);
   margin-bottom: var(--space-sm);
 }
 
@@ -620,17 +628,80 @@ a:hover {
 
 /* Footer */
 .footer {
-  background-color: var(--color-charcoal);
+  background-color: #0F0D0C;
   color: var(--color-sand);
   padding: var(--space-xl) 0;
   text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(245, 241, 232, 0.1);
 }
 
 .footer p {
   margin: 0;
   font-size: var(--text-sm);
   opacity: 0.8;
+}
+
+/* Thick Image Banner Section */
+.image-banner {
+  position: relative;
+  min-height: 60vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-dark-bg);
+}
+
+.image-banner-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.image-banner-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6) contrast(1.1);
+}
+
+.image-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 22, 20, 0.7) 0%,
+    rgba(26, 22, 20, 0.3) 50%,
+    rgba(26, 22, 20, 0.8) 100%
+  );
+  z-index: 1;
+}
+
+.image-banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  padding: var(--space-2xl);
+}
+
+.image-banner-content h2 {
+  font-size: var(--text-3xl);
+  color: var(--color-cream);
+  margin-bottom: var(--space-md);
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.image-banner-content p {
+  font-size: var(--text-lg);
+  color: var(--color-sand);
+  margin: 0 auto;
 }
 
 /* Responsive Design */
