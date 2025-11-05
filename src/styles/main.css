@@ -270,7 +270,7 @@ a:hover {
   z-index: 1;
   text-align: center;
   max-width: 900px;
-  padding: var(--space-2xl) var(--container-padding);
+  padding: var(--space-3xl) var(--container-padding) var(--space-2xl);
 }
 
 .hero-title {
@@ -280,6 +280,7 @@ a:hover {
   margin-bottom: var(--space-md);
   letter-spacing: -0.02em;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  padding-top: var(--space-2xl);
 }
 
 .hero-subtitle {
