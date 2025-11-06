@@ -304,7 +304,7 @@ a:hover {
   font-size: var(--text-xl);
   color: var(--color-cream);
   font-weight: 600;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   line-height: 1.5;
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
