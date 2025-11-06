@@ -300,21 +300,14 @@ a:hover {
   padding-top: var(--space-2xl);
 }
 
-.hero-subtitle {
-  font-size: var(--text-lg);
+.hero-message {
+  font-size: var(--text-xl);
   color: var(--color-cream);
-  margin-bottom: var(--space-xl);
-  font-weight: 400;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero-actions {
-  display: flex;
-  gap: var(--space-md);
-  justify-content: center;
-  flex-wrap: wrap;
+  font-weight: 600;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Buttons */
