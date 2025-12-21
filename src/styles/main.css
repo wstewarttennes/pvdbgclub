@@ -775,6 +775,12 @@ a:hover {
   opacity: 0.8;
 }
 
+.footer .photo-credit {
+  font-style: italic;
+  margin-bottom: var(--space-sm);
+  opacity: 0.6;
+}
+
 /* Thick Image Banner Section */
 .image-banner {
   position: relative;
