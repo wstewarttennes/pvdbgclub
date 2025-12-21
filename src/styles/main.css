@@ -777,8 +777,9 @@ a:hover {
 
 .footer .photo-credit {
   font-style: italic;
-  margin-bottom: var(--space-sm);
-  opacity: 0.6;
+  margin-bottom: var(--space-xs);
+  opacity: 0.5;
+  font-size: var(--text-xs);
 }
 
 /* Thick Image Banner Section */
