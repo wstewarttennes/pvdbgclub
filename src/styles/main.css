@@ -310,6 +310,13 @@ a:hover {
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
 }
 
+.hero-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  margin-top: var(--space-xl);
+}
+
 /* Buttons */
 .btn {
   display: inline-flex;
@@ -405,8 +412,9 @@ a:hover {
 
 .stat-number {
   font-family: var(--font-display);
-  font-size: var(--text-2xl);
+  font-size: var(--text-xl);
   font-weight: 500;
+  line-height: 1.1;
   color: var(--color-terracotta);
   margin-bottom: var(--space-xs);
 }
@@ -426,8 +434,8 @@ a:hover {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-xl);
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
   margin-top: var(--space-xl);
 }
 
@@ -466,7 +474,7 @@ a:hover {
 
 /* Gallery Section */
 .gallery {
-  background-color: var(--color-cream);
+  background-color: var(--color-dark-surface);
   text-align: center;
 }
 
@@ -478,35 +486,115 @@ a:hover {
 }
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: var(--space-md);
+  column-count: 4;
+  column-gap: var(--space-sm);
   margin-top: var(--space-xl);
 }
 
 .gallery-item {
+  display: block;
+  width: 100%;
+  margin: 0 0 var(--space-sm);
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
   position: relative;
-  aspect-ratio: 1;
   overflow: hidden;
-  background-color: var(--color-sand);
-  border: 1px solid var(--color-sand);
-  transition: var(--transition);
+  break-inside: avoid;
+  border-radius: 2px;
+  line-height: 0;
+}
+
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26, 22, 20, 0.55) 0%, rgba(26, 22, 20, 0) 45%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
 .gallery-item img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.6s ease;
-}
-
-.gallery-item:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  height: auto;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .gallery-item:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+.gallery-item:focus-visible {
+  outline: 2px solid var(--color-terracotta);
+  outline-offset: 3px;
+}
+
+@media (max-width: 968px) {
+  .gallery-grid { column-count: 3; }
+}
+
+@media (max-width: 640px) {
+  .gallery-grid { column-count: 2; }
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+  background: rgba(15, 13, 12, 0.92);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.lightbox.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-img {
+  max-width: min(1100px, 92vw);
+  max-height: 88vh;
+  object-fit: contain;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+  transform: scale(0.96);
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.lightbox.open .lightbox-img {
+  transform: scale(1);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-lg);
+  width: 48px;
+  height: 48px;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--color-cream);
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox-close:hover {
+  opacity: 1;
 }
 
 /* Events Section */
@@ -780,6 +868,24 @@ a:hover {
   margin-bottom: var(--space-xs);
   opacity: 0.5;
   font-size: var(--text-xs);
+}
+
+.footer-fineprint {
+  margin-top: var(--space-md);
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+}
+
+.footer-fineprint a {
+  color: var(--color-slate);
+  opacity: 0.35;
+  text-decoration: none;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.footer-fineprint a:hover {
+  opacity: 0.9;
+  color: var(--color-bronze);
 }
 
 /* Thick Image Banner Section */

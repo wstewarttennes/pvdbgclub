@@ -22,9 +22,45 @@ function initHeroCarousel() {
   setInterval(showNextImage, 5000);
 }
 
+// Gallery Lightbox
+function initLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.getElementById('lightbox-close');
+  const items = document.querySelectorAll('.gallery-item');
+
+  if (!lightbox || !lightboxImg || items.length === 0) return;
+
+  function open(src) {
+    lightboxImg.src = src;
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  items.forEach(item => {
+    item.addEventListener('click', () => open(item.dataset.full));
+  });
+
+  closeBtn.addEventListener('click', close);
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) close();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('open')) close();
+  });
+}
+
 // Initialize carousel when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
   initHeroCarousel();
+  initLightbox();
 });
 
 // Smooth scroll behavior for navigation links
