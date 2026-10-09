@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Club standings, ratings, and tournament results for the Providence Backgammon Club.">
+  <title>Standings — Providence Backgammon Club</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+  <!-- Open Graph / Facebook / iMessage -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pvdbackgammon.club/standings.html">
+  <meta property="og:title" content="Standings — Providence Backgammon Club">
+  <meta property="og:description" content="Club standings, ratings, and tournament results for the Providence Backgammon Club.">
+  <meta property="og:image" content="https://pvdbackgammon.club/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://pvdbackgammon.club/standings.html">
+  <meta name="twitter:title" content="Standings — Providence Backgammon Club">
+  <meta name="twitter:description" content="Club standings, ratings, and tournament results for the Providence Backgammon Club.">
+  <meta name="twitter:image" content="https://pvdbackgammon.club/og-image.jpg">
+
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="stylesheet" href="/src/styles/standings.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-content">
+        <div class="logo">
+          <a href="/"><img src="/logo/logo1.png" alt="Providence Backgammon Club Logo" class="logo-image" /></a>
+          <span class="logo-text">Providence Backgammon Club</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/#about">About</a></li>
+          <li><a href="/#events">Events</a></li>
+          <li><a href="/standings.html" class="is-current">Standings</a></li>
+          <li><a href="/#join">Join</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="standings-page">
+    <div class="container">
+      <header class="standings-header">
+        <p class="eyebrow">Club Records</p>
+        <h1 class="standings-title">Standings</h1>
+        <p class="standings-sub" id="summary">Loading the club records&hellip;</p>
+      </header>
+
+      <div id="content" hidden>
+        <section class="standings-section">
+          <div class="table-scroll">
+            <table class="standings-table">
+              <thead>
+                <tr>
+                  <th class="col-rank">#</th>
+                  <th class="col-name">Member</th>
+                  <th class="num">Rating</th>
+                  <th class="num">W</th>
+                  <th class="num">L</th>
+                  <th class="num">Win %</th>
+                  <th class="num" title="Tournaments won">Titles</th>
+                  <th class="num" title="Finals reached">Finals</th>
+                  <th class="num" title="Semifinals reached">Semis</th>
+                  <th class="num" title="Tournaments entered">Nights</th>
+                </tr>
+              </thead>
+              <tbody id="standings-body"></tbody>
+            </table>
+          </div>
+          <p class="table-note">
+            Rating is Elo — everyone starts at 1500 and it moves after every match,
+            so beating a stronger player is worth more. Byes never count as a win.
+          </p>
+        </section>
+
+        <section class="standings-section">
+          <h2 class="section-title">Tournament Results</h2>
+          <div id="tournaments" class="tournament-list"></div>
+        </section>
+      </div>
+
+      <p id="error" class="standings-empty" hidden></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="photo-credit">Photos by Nadia Eisa</p>
+      <p>&copy; 2025 Providence Backgammon Club. All rights reserved.</p>
+      <p class="footer-fineprint"><a href="https://dijondreams.com" target="_blank" rel="noopener">Mustard Shop</a></p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/standings.js"></script>
+</body>
+</html>

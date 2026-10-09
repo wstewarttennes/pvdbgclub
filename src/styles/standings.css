@@ -1,0 +1,263 @@
+/* Standings page — club records published from the tournament app.
+   Uses the tokens defined in main.css so it reads as part of the same site. */
+
+.standings-page {
+  /* Nav is fixed, so the page needs to clear it. */
+  padding: calc(var(--space-2xl) + 3rem) 0 var(--space-2xl);
+  min-height: 70vh;
+}
+
+.standings-header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.standings-title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  line-height: 1.05;
+  color: var(--color-cream);
+  margin: 0 0 var(--space-sm);
+}
+
+.standings-sub {
+  color: var(--color-slate);
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+.standings-empty {
+  text-align: center;
+  color: var(--color-slate);
+  font-size: var(--text-base);
+  padding: var(--space-2xl) 0;
+}
+
+.standings-section {
+  margin-bottom: var(--space-2xl);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-cream);
+  margin: 0 0 var(--space-md);
+}
+
+/* ---------- standings table ---------- */
+
+.table-scroll {
+  overflow-x: auto;
+  border: 1px solid rgba(245, 241, 232, 0.1);
+  border-radius: 4px;
+  background: var(--color-dark-surface);
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+  min-width: 620px;
+}
+
+.standings-table th,
+.standings-table td {
+  padding: var(--space-sm) var(--space-sm);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.standings-table thead th {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-slate);
+  border-bottom: 1px solid rgba(245, 241, 232, 0.12);
+  background: var(--color-dark-elevated);
+}
+
+.standings-table tbody tr {
+  border-bottom: 1px solid rgba(245, 241, 232, 0.06);
+  transition: var(--transition);
+}
+
+.standings-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.standings-table tbody tr:hover {
+  background: rgba(245, 241, 232, 0.03);
+}
+
+.standings-table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.col-rank {
+  width: 3rem;
+  color: var(--color-slate);
+  font-variant-numeric: tabular-nums;
+}
+
+.col-name {
+  font-weight: 600;
+  color: var(--color-cream);
+  white-space: normal;
+  min-width: 9rem;
+}
+
+.rating {
+  font-weight: 700;
+  color: var(--color-bronze);
+}
+
+.has-title {
+  color: var(--color-terracotta);
+  font-weight: 700;
+}
+
+.muted {
+  color: var(--color-slate);
+}
+
+/* Top three get a quiet medal treatment rather than a loud one. */
+.is-gold .col-rank,
+.is-silver .col-rank,
+.is-bronze .col-rank {
+  font-weight: 700;
+}
+
+.is-gold .col-rank { color: var(--color-bronze); }
+.is-silver .col-rank { color: var(--color-sand); }
+.is-bronze .col-rank { color: var(--color-terracotta); }
+
+.is-gold .col-name::after {
+  content: ' 🏆';
+  font-size: 0.85em;
+}
+
+.table-note {
+  color: var(--color-slate);
+  font-size: var(--text-xs);
+  line-height: 1.6;
+  margin: var(--space-sm) 0 0;
+  max-width: 60ch;
+}
+
+/* ---------- tournament archive ---------- */
+
+.tournament-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.tournament {
+  background: var(--color-dark-surface);
+  border: 1px solid rgba(245, 241, 232, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.tournament > summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  cursor: pointer;
+  list-style: none;
+  transition: var(--transition);
+}
+
+.tournament > summary::-webkit-details-marker {
+  display: none;
+}
+
+.tournament > summary:hover {
+  background: rgba(245, 241, 232, 0.03);
+}
+
+.tournament-date {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  color: var(--color-cream);
+}
+
+.tournament-champ {
+  color: var(--color-bronze);
+  font-weight: 600;
+  font-size: var(--text-sm);
+}
+
+.tournament-meta {
+  color: var(--color-slate);
+  font-size: var(--text-xs);
+  margin-left: auto;
+}
+
+.result-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 var(--space-md) var(--space-md);
+}
+
+.result-round {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-slate);
+  margin: var(--space-md) 0 var(--space-xs);
+  padding-top: var(--space-xs);
+  border-top: 1px solid rgba(245, 241, 232, 0.08);
+}
+
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-xs);
+  padding: 0.35rem 0;
+  font-size: var(--text-sm);
+}
+
+.result-winner {
+  font-weight: 600;
+  color: var(--color-cream);
+}
+
+.result-beat {
+  color: var(--color-slate);
+  font-size: var(--text-xs);
+}
+
+.result-loser {
+  color: var(--color-slate);
+}
+
+.result-score {
+  margin-left: auto;
+  color: var(--color-bronze);
+  font-variant-numeric: tabular-nums;
+  font-size: var(--text-xs);
+}
+
+/* ---------- nav current page ---------- */
+
+.nav-links a.is-current {
+  color: var(--color-terracotta);
+}
+
+@media (max-width: 640px) {
+  .tournament-meta {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .result-score {
+    margin-left: 0;
+  }
+}

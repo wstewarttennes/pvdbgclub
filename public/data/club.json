@@ -1,0 +1,338 @@
+{
+  "generatedAt": "2026-08-27T03:25:19.735Z",
+  "tournamentCount": 1,
+  "memberCount": 16,
+  "standings": [
+    {
+      "name": "Lisa St. Pierre",
+      "played": 1,
+      "wins": 4,
+      "losses": 0,
+      "titles": 1,
+      "finals": 1,
+      "semis": 1,
+      "elo": 1548,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 4,
+      "winPct": 1,
+      "rank": 1
+    },
+    {
+      "name": "Matt S.",
+      "played": 1,
+      "wins": 3,
+      "losses": 1,
+      "titles": 0,
+      "finals": 1,
+      "semis": 1,
+      "elo": 1524,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 4,
+      "winPct": 0.75,
+      "rank": 2
+    },
+    {
+      "name": "Cristiane",
+      "played": 1,
+      "wins": 2,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 1,
+      "elo": 1512,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 3,
+      "winPct": 0.6666666666666666,
+      "rank": 3
+    },
+    {
+      "name": "Mike St. Pierre",
+      "played": 1,
+      "wins": 2,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 1,
+      "elo": 1512,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 3,
+      "winPct": 0.6666666666666666,
+      "rank": 4
+    },
+    {
+      "name": "Ali Lanier",
+      "played": 1,
+      "wins": 1,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1500,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 2,
+      "winPct": 0.5,
+      "rank": 5
+    },
+    {
+      "name": "Jeff C",
+      "played": 1,
+      "wins": 1,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1500,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 2,
+      "winPct": 0.5,
+      "rank": 6
+    },
+    {
+      "name": "mel",
+      "played": 1,
+      "wins": 1,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1500,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 2,
+      "winPct": 0.5,
+      "rank": 7
+    },
+    {
+      "name": "will",
+      "played": 1,
+      "wins": 1,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1500,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 2,
+      "winPct": 0.5,
+      "rank": 8
+    },
+    {
+      "name": "Ethan",
+      "played": 1,
+      "wins": 0,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1488,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 1,
+      "winPct": 0,
+      "rank": 9
+    },
+    {
+      "name": "jake",
+      "played": 1,
+      "wins": 0,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1488,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 1,
+      "winPct": 0,
+      "rank": 10
+    },
+    {
+      "name": "James S.",
+      "played": 1,
+      "wins": 0,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1488,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 1,
+      "winPct": 0,
+      "rank": 11
+    },
+    {
+      "name": "Mark DeTroia",
+      "played": 1,
+      "wins": 0,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1488,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 1,
+      "winPct": 0,
+      "rank": 12
+    },
+    {
+      "name": "Niko",
+      "played": 1,
+      "wins": 0,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1488,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 1,
+      "winPct": 0,
+      "rank": 13
+    },
+    {
+      "name": "Robin",
+      "played": 1,
+      "wins": 0,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1488,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 1,
+      "winPct": 0,
+      "rank": 14
+    },
+    {
+      "name": "steve w",
+      "played": 1,
+      "wins": 0,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1488,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 1,
+      "winPct": 0,
+      "rank": 15
+    },
+    {
+      "name": "Weston",
+      "played": 1,
+      "wins": 0,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1488,
+      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "matches": 1,
+      "winPct": 0,
+      "rank": 16
+    }
+  ],
+  "tournaments": [
+    {
+      "id": 1787801115257,
+      "date": "2026-08-27T03:25:15.257Z",
+      "name": "Backgammon Night",
+      "matchLength": 1,
+      "entrants": 16,
+      "champion": "Lisa St. Pierre",
+      "runnerUp": "Matt S.",
+      "semifinalists": [
+        "Cristiane",
+        "Mike St. Pierre"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "winner": "Cristiane",
+          "loser": "steve w",
+          "score": ""
+        },
+        {
+          "round": 0,
+          "winner": "will",
+          "loser": "jake",
+          "score": ""
+        },
+        {
+          "round": 0,
+          "winner": "Jeff C",
+          "loser": "Robin",
+          "score": ""
+        },
+        {
+          "round": 0,
+          "winner": "Lisa St. Pierre",
+          "loser": "Weston",
+          "score": ""
+        },
+        {
+          "round": 0,
+          "winner": "mel",
+          "loser": "Niko",
+          "score": ""
+        },
+        {
+          "round": 0,
+          "winner": "Mike St. Pierre",
+          "loser": "James S.",
+          "score": ""
+        },
+        {
+          "round": 0,
+          "winner": "Ali Lanier",
+          "loser": "Ethan",
+          "score": ""
+        },
+        {
+          "round": 0,
+          "winner": "Matt S.",
+          "loser": "Mark DeTroia",
+          "score": ""
+        },
+        {
+          "round": 1,
+          "winner": "Cristiane",
+          "loser": "will",
+          "score": ""
+        },
+        {
+          "round": 1,
+          "winner": "Lisa St. Pierre",
+          "loser": "Jeff C",
+          "score": ""
+        },
+        {
+          "round": 1,
+          "winner": "Mike St. Pierre",
+          "loser": "mel",
+          "score": ""
+        },
+        {
+          "round": 1,
+          "winner": "Matt S.",
+          "loser": "Ali Lanier",
+          "score": ""
+        },
+        {
+          "round": 2,
+          "winner": "Lisa St. Pierre",
+          "loser": "Cristiane",
+          "score": ""
+        },
+        {
+          "round": 2,
+          "winner": "Matt S.",
+          "loser": "Mike St. Pierre",
+          "score": ""
+        },
+        {
+          "round": 3,
+          "winner": "Lisa St. Pierre",
+          "loser": "Matt S.",
+          "score": ""
+        }
+      ]
+    }
+  ]
+}
