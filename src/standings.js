@@ -14,6 +14,8 @@ const fmtDate = (iso) =>
     year: 'numeric',
     month: 'long',
     day: 'numeric',
+    // The club meets in Providence; a night should read the same date for everyone.
+    timeZone: 'America/New_York',
   });
 
 const pct = (n) => `${Math.round(n * 100)}%`;
@@ -31,15 +33,21 @@ function showError(message) {
   errorEl.textContent = message;
 }
 
+// Members level on rating and record share a rank (and a medal) instead of
+// being split by the alphabetical tiebreak.
+const sameStanding = (a, b) => a.elo === b.elo && a.wins === b.wins && a.losses === b.losses;
+
 function renderStandings(standings) {
+  let rank = 0;
   bodyEl.replaceChildren(
-    ...standings.map((member) => {
+    ...standings.map((member, i) => {
+      if (i === 0 || !sameStanding(member, standings[i - 1])) rank = i + 1;
       const row = document.createElement('tr');
-      const medal = MEDALS[member.rank - 1];
+      const medal = MEDALS[rank - 1];
       if (medal) row.classList.add(`is-${medal}`);
 
       const cells = [
-        { text: member.rank, className: 'col-rank' },
+        { text: rank, className: 'col-rank' },
         { text: member.name, className: 'col-name' },
         { text: member.elo, className: 'num rating' },
         { text: member.wins, className: 'num' },
