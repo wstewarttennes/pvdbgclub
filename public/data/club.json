@@ -1,8 +1,22 @@
 {
-  "generatedAt": "2026-08-27T03:25:19.735Z",
-  "tournamentCount": 1,
-  "memberCount": 16,
+  "generatedAt": "2026-10-22T02:26:18.212Z",
+  "tournamentCount": 2,
+  "memberCount": 28,
   "standings": [
+    {
+      "name": "Arra",
+      "played": 1,
+      "wins": 4,
+      "losses": 0,
+      "titles": 1,
+      "finals": 1,
+      "semis": 1,
+      "elo": 1548,
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 4,
+      "winPct": 1,
+      "rank": 1
+    },
     {
       "name": "Lisa St. Pierre",
       "played": 1,
@@ -15,21 +29,21 @@
       "lastSeen": "2026-08-27T03:25:15.257Z",
       "matches": 4,
       "winPct": 1,
-      "rank": 1
+      "rank": 2
     },
     {
-      "name": "Matt S.",
-      "played": 1,
-      "wins": 3,
-      "losses": 1,
+      "name": "will",
+      "played": 2,
+      "wins": 4,
+      "losses": 2,
       "titles": 0,
       "finals": 1,
       "semis": 1,
       "elo": 1524,
-      "lastSeen": "2026-08-27T03:25:15.257Z",
-      "matches": 4,
-      "winPct": 0.75,
-      "rank": 2
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 6,
+      "winPct": 0.6666666666666666,
+      "rank": 3
     },
     {
       "name": "Cristiane",
@@ -43,7 +57,35 @@
       "lastSeen": "2026-08-27T03:25:15.257Z",
       "matches": 3,
       "winPct": 0.6666666666666666,
-      "rank": 3
+      "rank": 4
+    },
+    {
+      "name": "Eren",
+      "played": 1,
+      "wins": 2,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 1,
+      "elo": 1512,
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 3,
+      "winPct": 0.6666666666666666,
+      "rank": 5
+    },
+    {
+      "name": "jeremy",
+      "played": 1,
+      "wins": 2,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 1,
+      "elo": 1512,
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 3,
+      "winPct": 0.6666666666666666,
+      "rank": 6
     },
     {
       "name": "Mike St. Pierre",
@@ -57,7 +99,35 @@
       "lastSeen": "2026-08-27T03:25:15.257Z",
       "matches": 3,
       "winPct": 0.6666666666666666,
-      "rank": 4
+      "rank": 7
+    },
+    {
+      "name": "matt s",
+      "played": 2,
+      "wins": 3,
+      "losses": 2,
+      "titles": 0,
+      "finals": 1,
+      "semis": 1,
+      "elo": 1511,
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 5,
+      "winPct": 0.6,
+      "rank": 8
+    },
+    {
+      "name": "mike duffy",
+      "played": 1,
+      "wins": 1,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1501,
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 2,
+      "winPct": 0.5,
+      "rank": 9
     },
     {
       "name": "Ali Lanier",
@@ -71,7 +141,49 @@
       "lastSeen": "2026-08-27T03:25:15.257Z",
       "matches": 2,
       "winPct": 0.5,
-      "rank": 5
+      "rank": 10
+    },
+    {
+      "name": "avi",
+      "played": 1,
+      "wins": 1,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1500,
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 2,
+      "winPct": 0.5,
+      "rank": 11
+    },
+    {
+      "name": "daniel",
+      "played": 1,
+      "wins": 1,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1500,
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 2,
+      "winPct": 0.5,
+      "rank": 12
+    },
+    {
+      "name": "Jay",
+      "played": 1,
+      "wins": 1,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1500,
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 2,
+      "winPct": 0.5,
+      "rank": 13
     },
     {
       "name": "Jeff C",
@@ -85,35 +197,49 @@
       "lastSeen": "2026-08-27T03:25:15.257Z",
       "matches": 2,
       "winPct": 0.5,
-      "rank": 6
+      "rank": 14
     },
     {
       "name": "mel",
-      "played": 1,
+      "played": 2,
       "wins": 1,
-      "losses": 1,
+      "losses": 2,
       "titles": 0,
       "finals": 0,
       "semis": 0,
-      "elo": 1500,
-      "lastSeen": "2026-08-27T03:25:15.257Z",
-      "matches": 2,
-      "winPct": 0.5,
-      "rank": 7
+      "elo": 1488,
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 3,
+      "winPct": 0.3333333333333333,
+      "rank": 15
     },
     {
-      "name": "will",
+      "name": "clay",
       "played": 1,
-      "wins": 1,
+      "wins": 0,
       "losses": 1,
       "titles": 0,
       "finals": 0,
       "semis": 0,
-      "elo": 1500,
-      "lastSeen": "2026-08-27T03:25:15.257Z",
-      "matches": 2,
-      "winPct": 0.5,
-      "rank": 8
+      "elo": 1488,
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 1,
+      "winPct": 0,
+      "rank": 16
+    },
+    {
+      "name": "Cory",
+      "played": 1,
+      "wins": 0,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1488,
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 1,
+      "winPct": 0,
+      "rank": 17
     },
     {
       "name": "Ethan",
@@ -127,7 +253,7 @@
       "lastSeen": "2026-08-27T03:25:15.257Z",
       "matches": 1,
       "winPct": 0,
-      "rank": 9
+      "rank": 18
     },
     {
       "name": "jake",
@@ -141,10 +267,10 @@
       "lastSeen": "2026-08-27T03:25:15.257Z",
       "matches": 1,
       "winPct": 0,
-      "rank": 10
+      "rank": 19
     },
     {
-      "name": "James S.",
+      "name": "Jen",
       "played": 1,
       "wins": 0,
       "losses": 1,
@@ -152,10 +278,24 @@
       "finals": 0,
       "semis": 0,
       "elo": 1488,
-      "lastSeen": "2026-08-27T03:25:15.257Z",
+      "lastSeen": "2026-10-22T02:17:13.310Z",
       "matches": 1,
       "winPct": 0,
-      "rank": 11
+      "rank": 20
+    },
+    {
+      "name": "Luke",
+      "played": 1,
+      "wins": 0,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1488,
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 1,
+      "winPct": 0,
+      "rank": 21
     },
     {
       "name": "Mark DeTroia",
@@ -169,7 +309,7 @@
       "lastSeen": "2026-08-27T03:25:15.257Z",
       "matches": 1,
       "winPct": 0,
-      "rank": 12
+      "rank": 22
     },
     {
       "name": "Niko",
@@ -183,7 +323,7 @@
       "lastSeen": "2026-08-27T03:25:15.257Z",
       "matches": 1,
       "winPct": 0,
-      "rank": 13
+      "rank": 23
     },
     {
       "name": "Robin",
@@ -197,7 +337,21 @@
       "lastSeen": "2026-08-27T03:25:15.257Z",
       "matches": 1,
       "winPct": 0,
-      "rank": 14
+      "rank": 24
+    },
+    {
+      "name": "stephen",
+      "played": 1,
+      "wins": 0,
+      "losses": 1,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1488,
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 1,
+      "winPct": 0,
+      "rank": 25
     },
     {
       "name": "steve w",
@@ -211,7 +365,7 @@
       "lastSeen": "2026-08-27T03:25:15.257Z",
       "matches": 1,
       "winPct": 0,
-      "rank": 15
+      "rank": 26
     },
     {
       "name": "Weston",
@@ -225,10 +379,129 @@
       "lastSeen": "2026-08-27T03:25:15.257Z",
       "matches": 1,
       "winPct": 0,
-      "rank": 16
+      "rank": 27
+    },
+    {
+      "name": "James S.",
+      "played": 2,
+      "wins": 0,
+      "losses": 2,
+      "titles": 0,
+      "finals": 0,
+      "semis": 0,
+      "elo": 1476,
+      "lastSeen": "2026-10-22T02:17:13.310Z",
+      "matches": 2,
+      "winPct": 0,
+      "rank": 28
     }
   ],
   "tournaments": [
+    {
+      "id": 1792635433310,
+      "date": "2026-10-22T02:17:13.310Z",
+      "name": "Backgammon Night",
+      "matchLength": 1,
+      "entrants": 16,
+      "champion": "Arra",
+      "runnerUp": "will",
+      "semifinalists": [
+        "Eren",
+        "jeremy"
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "winner": "Jay",
+          "loser": "mel",
+          "score": ""
+        },
+        {
+          "round": 0,
+          "winner": "Arra",
+          "loser": "Luke",
+          "score": ""
+        },
+        {
+          "round": 0,
+          "winner": "daniel",
+          "loser": "clay",
+          "score": ""
+        },
+        {
+          "round": 0,
+          "winner": "Eren",
+          "loser": "stephen",
+          "score": ""
+        },
+        {
+          "round": 0,
+          "winner": "jeremy",
+          "loser": "Cory",
+          "score": ""
+        },
+        {
+          "round": 0,
+          "winner": "avi",
+          "loser": "James S.",
+          "score": ""
+        },
+        {
+          "round": 0,
+          "winner": "mike duffy",
+          "loser": "matt s",
+          "score": ""
+        },
+        {
+          "round": 0,
+          "winner": "will",
+          "loser": "Jen",
+          "score": ""
+        },
+        {
+          "round": 1,
+          "winner": "Arra",
+          "loser": "Jay",
+          "score": ""
+        },
+        {
+          "round": 1,
+          "winner": "Eren",
+          "loser": "daniel",
+          "score": ""
+        },
+        {
+          "round": 1,
+          "winner": "jeremy",
+          "loser": "avi",
+          "score": ""
+        },
+        {
+          "round": 1,
+          "winner": "will",
+          "loser": "mike duffy",
+          "score": ""
+        },
+        {
+          "round": 2,
+          "winner": "Arra",
+          "loser": "Eren",
+          "score": ""
+        },
+        {
+          "round": 2,
+          "winner": "will",
+          "loser": "jeremy",
+          "score": ""
+        },
+        {
+          "round": 3,
+          "winner": "Arra",
+          "loser": "will",
+          "score": ""
+        }
+      ]
+    },
     {
       "id": 1787801115257,
       "date": "2026-08-27T03:25:15.257Z",
